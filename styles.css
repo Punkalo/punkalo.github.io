@@ -1,0 +1,290 @@
+:root {
+--main-purple: #7E638B;
+--main-green: #C8D087;
+--CuisineBanner: url(Images/ProjectCuisineBanner2.png);
+--ScrapsBanner: url(Images/ScrapsBanner2.png);
+--DDBanner: url(Images/DDBanner2.png);
+}
+@font-face{
+    font-family: 'Art_Nouveau', Ruigslay;
+    src: url(Fonts/ruigslay/Ruigslay.ttf);
+
+    font-family: 'Art_Nouveau', Legrand;
+    src: url(Fonts/legrand/Legrand-Regular.ttf);
+
+    font-family: 'MainBody', FjallaOne;
+    src: url(fonts/FjallaOne-Regular.ttf);
+}
+
+
+
+/*Head button Rules*/
+.headButtonContainer{
+font-family: "Legrand";
+padding: 15px;
+stroke: black;
+margin: 10px ;
+}
+
+.headButtonGames{
+    border: outset;
+    width: fit-content;
+    padding: 5px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 27px;
+  display: inline;
+    stroke: black;
+
+}
+.headButtonArt{
+      border: outset;
+     width: fit-content;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    border-radius: 27px;
+   display: inline;
+}
+.headButtonCode{
+      border: outset;
+     width: fit-content;
+    padding: 5px;
+    margin: auto;
+    background-color: white;
+    border-radius: 27px;
+   display: inline;
+}
+
+
+
+
+
+/* Main */
+.mainTitle{
+ text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: block;
+
+    background-image: url(Images/TitleCard.jpg);
+    background-size: cover;
+ background-repeat: no-repeat;
+    border-radius: 27px;
+    border: ridge;
+
+}
+
+.mainTitle .titleBanner{
+    color:white;
+    grid-area: 1/1;
+    text-shadow: 2px;
+
+}
+.mainTitle .subtext{
+   grid-area: 1/1;
+    position: relative;
+    color: black;
+    text-align: center;
+
+}
+
+.titleBanner {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    padding: 4px;
+    font-size: 8vw;
+    color: white;
+    font-family: 'Legrand';
+
+}
+
+body{
+margin:10%;
+margin-top: 10px;
+min-height : 100vh;
+background-repeat: no-repeat;
+background: #C8D087;
+background: -webkit-linear-gradient(180deg, rgba(200, 208, 135, 1) 11%, rgba(34, 26, 37, 1) 100%);
+background: -moz-linear-gradient(180deg, rgba(200, 208, 135, 1) 11%, rgba(34, 26, 37, 1) 100%);
+background: linear-gradient(180deg, rgba(200, 208, 135, 1) 11%, rgba(34, 26, 37, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#C8D087", endColorstr="#221A25", GradientType=0);
+}
+
+/* Preview Boxes */
+.DevPrevBox{
+padding-top: 12px;
+display: grid;
+ gap: 10px;
+ height: 500px;
+}
+.devLogbox{
+font-size: medium;
+ grid-column: end;
+ padding: 7px 0 0 1px;
+max-width: 596px;
+min-width: 200px;
+ font-family: "Legrand";
+
+ min-height: 300px;
+background-color: rgba(155, 155, 155, 0.44);
+border: ridge;
+border-radius: 27px;
+ margin: 0;
+}
+
+.PreviewBoxes{
+ display: flex;
+  flex-direction: column;
+  gap: 12px;
+position: relative;
+ min-width: 200px;
+}
+
+.previewBox1{
+
+ padding: 12px 12px 12px 12px;
+ max-width: 450px;
+ font-family: "Legrand";
+ text-align: left;
+ height: 156px;
+ color: white;
+background-image: var(--CuisineBanner);
+ background-size: contain;
+border: ridge;
+border-radius: 27px;
+ margin: auto;
+
+
+
+
+
+}
+.previewBox2{
+padding: 12px 12px 12px 12px;
+ max-width: 450px;
+ font-family: "Legrand";
+ text-align: left;
+ height: 156px;
+ color: white;
+background-image: var(--ScrapsBanner);
+ background-size: cover;
+ background-repeat: no-repeat;
+border: ridge;
+border-radius: 27px;
+
+
+
+}
+.previewBox3{
+padding: 12px 12px 12px 12px;
+ max-width: 450px;
+ font-family: "Legrand";
+ text-align: left;
+ height: 156px;
+ color: white;
+background-image: var(--CuisineBanner);
+ background-size: contain;
+border: ridge;
+border-radius: 27px;
+ margin: auto;
+}
+
+.mainBody{
+margin: 15px;
+padding: 10px;
+background-color: rgba(255, 255, 255, 0.16);
+
+}
+.gradiantbox{
+height: 100%;
+ width: 100%;
+ background-color: black;
+ position: absolute;
+ opacity: 40%;
+ border-radius: 27px;
+}
+
+.devLogTitle{
+ font-size: large;
+ border-top: double;
+ border-bottom: double;
+}
+
+.devLog{
+ text-align: left;
+ font-size: medium;
+ text-align-last: left;
+}
+
+.WhiteSpace{
+ padding: 5px;
+}
+.TopicSpacer{
+ border-color: white;
+ border-top: double;
+ border-bottom: double;
+ text-align: center;
+ color: black;
+  font-family: "Legrand"
+}
+
+p{
+ font-family: "FjallaOne";
+ display: block;
+ font-size: large;
+}
+
+.displayCase{
+ display: grid;
+ grid-template-columns: auto auto auto;
+ padding: 10px;
+ height: 300px;
+ margin: auto;
+}
+
+.mainBody img{
+max-height: 300px;
+max-width: 100%;
+min-width: 300px;
+ margin: auto;
+ display: block;
+ border: ridge;
+  border-radius: 27px;
+}
+
+video{
+ height: 300px;
+ width: 500px;
+ max-width: 100%;
+ margin: auto;
+ display: block;
+ border-radius: 27px;
+}
+.AboutCountainer{
+ background-image: url(Images/AboutMe.png);
+ display: grid;
+}
+.AboutMeTitle{
+ margin: auto;
+ text-align: center;
+    width: 100%;
+ padding-top: 3%;
+    padding-bottom: 3%;
+    display: block;
+   height: auto;
+    background-image: url(Images/AboutMe.png);
+    background-size: cover;
+ background-repeat: no-repeat;
+    border-radius: 27px;
+    border: ridge;
+font-family: "Legrand";
+font-size: large;
+
+}
+.AboutCountainer2{
+ grid-column: auto auto;
+ display: inline;
+}
